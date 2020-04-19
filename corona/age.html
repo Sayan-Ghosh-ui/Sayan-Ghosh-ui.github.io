@@ -1,7 +1,6 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/number.css">
+	<link rel="stylesheet" type="text/css" href="css/age.css">
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -13,29 +12,22 @@
 		Welcome to COVID-19 Risk Assessment
 	</title>
 	<script type="text/javascript">
-		
-		function FormData() {
-			 var phone = document.forms["frm"]["MOBILE"]; 
-			  if (phone.value == "")                           
+		function Form() {
+			 var ages = document.forms["frms"]["AGE"];
+			  if (ages.value == "")                           
     { 
-        window.alert("Please enter your phone number."); 
-        phone.focus(); 
+        window.alert("Please enter your age."); 
+        ages.focus(); 
         return false; 
-    }
-    if (phone.value.length < 9)                           
+    } 
+    if (ages.value>100)                           
      { 
-         window.alert("Please enter a valid phone number."); 
-         phone.focus(); 
-        return false; 
-    }
-    if (isNAN(phone.value)) {
-    	
-         window.alert("Please enter a valid phone number."); 
-         phone.focus(); 
+         window.alert("Please enter the proper age"); 
+         ages.focus(); 
         return false; 
     }
     return true;
-		}
+}
 	</script>
 </head>
 <body>
@@ -56,31 +48,36 @@
 	</div>
 </section>
 
-<!----------- main-section-number.html------------- -->
+<!-- main-age-area -->
 
-<section id="main-area">
+<section id="main-age-area">
 	<div class="container">
-		<div class="wrap">
-		<div class="text-area">
-			<h1>Welcome to COVID-19 Risk Assessment</h1>
-			<p>You’re about to use a short (3 min) health checkup to find your COVID status. Your answers will be carefully analyzed and suggestion will be provided based on that.</p>
-			<h2>Enter your phone number and get started</h2>
-			<form method="post" name="frm">
+		<div class="parent-age">
+			<h1>What is your age?</h1>
+			<form method="post" name="frms" onsubmit = "return Form();">
+			<div class="child-row">
 				<div class="row justify-content-center">
-					<div class="col-lg-7 col-md-7 col-sm-12">
-						<input type="text" name="MOBILE" placeholder="000000000" class="number-input">
-						<h4>+93</h4>
+					<div class="col-md-4 col-lg-4 col-sm-12">
+						<div class="form-groups">
+							<input type="text" name="AGE" placeholder="Ex: 60">
+						</div>
 					</div>
 				</div>
-				<div class="row justify-content-center">
-					<div class="col-lg-3 col-md-3 col-sm-12">
-					<input type="SUBMIT" name="NEXT" value="Next" class="number-input-2" onclick="FormData();">	
+			</div>
+			<div class="wrap">
+					 	<div class="parent-button d-flex justify-content-center">
+					<div class="back-button">
+					<a href="gender.html"><input type="button" name="BACK" value="BACK"></a>
+					</div>
+
+					<div class="next-button">
+						<input type="SUBMIT" name="FORWARDS-NEXT" value="NEXT">
+					</div>
 				</div>
 			</div>
-			</form>
+		</form>
 		</div>
 	</div>
-</div>
 </section>
 </body>
 </html>

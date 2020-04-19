@@ -11,6 +11,31 @@
 	<title>
 		Welcome to COVID-19 Risk Assessment
 	</title>
+	<script type="text/javascript">
+		function validate(){
+		var area_yes = document.getElementById('covid_area_yes').checked;
+		var area_no = document.getElementById('covid_area_no').checked;
+		var case_yes = document.getElementById('covid_case_yes').checked;
+		var case_no = document.getElementById('covid_case_no').checked;
+		var worker_yes = document.getElementById('covid_worker_yes').checked;
+		var worker_no = document.getElementById('covid_worker_no').checked;
+
+
+		if ((area_yes =="") &&(area_no =="")) {
+			window.alert(" please selecet Have you travelled to COVID-19 Endemic Area in last 14 days? yes or no ");
+			return false;
+		}
+		if ((case_yes =="") &&(case_no =="")) {
+			window.alert(" please selecet Have you come in contact with any COVID Case in the last 14 days? yes or no ");
+			return false;
+		}
+		if ((worker_yes =="") &&(worker_no =="")) {
+			window.alert(" please selecet Are you a healthcare worker? yes or no ");
+			return false;
+		}
+		return true;
+	}
+</script>
 </head>
 <body>
 
@@ -35,45 +60,33 @@
 		<div class="wrap">
 		<div class="hedaing-question">
 			<h1>Screening Questionnaire</h1>
-			
-			<div class="heading-question-underline"></div>
+             <div class="heading-question-underline"></div>
+             <h3>Patient History</h3>
 		</div>
 
 	<div class="parent-form">
- 	<form method="post">
+ 	<form method="post" onsubmit="return validate();" action="question2.html">
  	<div class="row">
  		<div class="col-md-12 col-lg-12">
- 			<h1>1.Have you travelled to COVID-19 Endemic Area Before 23rd March? </h1>
- 			<div class="form-groups" ><input type="radio" name="status"><label>YES</label></div>
- 			<div class="form-groups active" ><input type="radio" name="status"><label>YES</label></div>
+ 			<h1>1.Have you travelled to COVID-19 Endemic Area in last 14 days ? </h1>
+ 			<div class="form-groups" ><input type="radio" name="area" id="covid_area_yes"><label>Yes</label></div>
+ 			<div class="form-groups active" ><input type="radio" name="area" id="covid_area_no"><label>No</label></div>
+ 		</div>
+ 		<div class="heading-question-underline"></div>
+		
+		<div class="col-md-12 col-lg-12">
+ 			<h1>2.Have you come in contact with any COVID Case in the last 14 days? </h1>
+ 			<div class="form-groups" ><input type="radio" name="case"  id="covid_case_yes"><label>Yes</label></div>
+ 			<div class="form-groups active" ><input type="radio" name="case"   id="covid_case_no"><label>No</label></div>
  		</div>
  		<div class="heading-question-underline"></div>
 
  		<div class="col-md-12 col-lg-12">
- 			<h1>2.Do you have any of this following disease? </h1>
- 			<div class="form-groups"><input type="checkbox" name="disease" value="SARI (Severe Acute Respiratory Illness)">
- 				<label>SARI (Severe Acute Respiratory Illness)</label></div>
-
- 					<div class="form-groups"><input type="checkbox" name="disease" value="Chronic liver disease">
- 				<label>Chronic liver disease</label></div>
-
- 						<div class="form-groups"><input type="checkbox" name="disease" value="Chronic lung disease">
- 				<label>Chronic lung disease</label></div>
-
- 				<div class="form-groups"><input type="checkbox" name="disease" value="Cancer">
- 				<label>Cancer</label></div>
-
- 				<div class="form-groups"><input type="checkbox" name="disease" value="Diabetes">
- 				<label>Diabetes</label></div>
-
- 				<div class="form-groups"><input type="checkbox" name="disease" value="Cardiovascular disease">
- 				<label>Cardiovascular disease</label></div>
-
- 					<div class="form-groups"><input type="checkbox" name="disease" value="Other">
- 				<label>Other</label></div>
- 				
-
- 			</div>
+ 			<h1>3.Are you a healthcare worker? </h1>
+ 			<div class="form-groups" ><input type="radio" name="worker" id="covid_worker_yes"><label>Yes</label></div>
+ 			<div class="form-groups active" ><input type="radio" name="worker"   id="covid_worker_no"><label>No</label></div>
+ 		</div>
+ 		
  		</div>
  		<div class="heading-question-underline-2"></div>
  		<div class="parent-button d-flex justify-content-center">

@@ -12,6 +12,18 @@
 	<title>
 		Welcome to COVID-19 Risk Assessment
 	</title>
+	<script type="text/javascript">
+		function validate(){
+			  var check = document.getElementById("checks").checked;
+			  if((check =="")){
+			  	alert("Please accept terms and condition.");
+
+		        
+		        return false; 
+			  } 
+			  return true;
+			}
+	</script>
 </head>
 <body>
 
@@ -58,14 +70,14 @@
 
       <!---------------------- form-design-part------------------------- -->
 				
-				<form method="post">
+				<form method="post" name="frms" action="gender.html" >
 					<div class="form-groups">
-						<input type="checkbox" name="disease" value="ACCEPT-TERMS" class="check">
+						<input type="checkbox" name="Terms" id="checks" value="ACCEPT-TERMS" class="check">
 					<br>
  				<h1>I read and accept<a href="#"> Terms of Service</a> and<a href="#"> Privacy Policy</a>.</h1>
 
  			</div>
-				</form>
+				
 
        <!--------------------- button-design-area ----------->
 				
@@ -75,9 +87,10 @@
 					</div>
 
 					<div class="next-button">
-						<input type="SUBMIT" name="FORWARD" value="NEXT">
+						<input type="SUBMIT" name="FORWARD" value="NEXT" onclick="return validate(); ">
 					</div>
 				</div>
+				</form>
 			</div>
 		</div>
 	</section>

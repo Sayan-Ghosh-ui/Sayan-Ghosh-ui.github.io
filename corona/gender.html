@@ -1,6 +1,6 @@
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/age.css">
+	<link rel="stylesheet" type="text/css" href="css/gender.css">
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -11,6 +11,18 @@
 	<title>
 		Welcome to COVID-19 Risk Assessment
 	</title>
+	<script type="text/javascript">
+		function validate(){
+		var male = document.getElementById('male_check').checked;
+		var female = document.getElementById('female_check').checked;
+		if ((male=="")&&(female=="")) {
+			window.alert("please select your gender");
+			return false;
+		}
+		return true;
+	}
+
+	</script>
 </head>
 <body>
 
@@ -30,29 +42,51 @@
 	</div>
 </section>
 
-<!-- main-age-area -->
 
-<section id="main-age-area">
+<!---------- main-part of gender-pare------------- -->
+<section id="main-part">
 	<div class="container">
-		<div class="parent-age">
-			<h1>What is your age?</h1>
-			<div class="child-row">
+		
+			<div class="parent-main">
+				<h1>Select your gender</h1>
+				<form method="post" onsubmit="return validate();" action="question.html">
 				<div class="row justify-content-center">
-					<div class="col-md-4 col-lg-4 col-sm-12">
-						<div class="form-groups">
-							<input type="text" name="AGE" placeholder="Ex: 60">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="wrap">
+					<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 p-3 pt-5">
+						<div class="main-box">
+							<div class="inner-box">
+								<img src="image/male.png">
+								</div>
+								<div class="form-groups"><input type="radio"  id="male_check"><label>Male</label>
+						       </div>
+					         </div>
+					     </div>
+
+					<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 p-3 pt-5">
+						<div class="main-box">
+							<div class="inner-box">
+								<img src="image/female.png">
+								</div>
+								<div class="form-groups"><input type="radio"  id="female_check"><label>Female</label>
+						       </div>
+					         </div>
+					     </div>
+					 </div>
+					 <div class="wrap">
 					 	<div class="parent-button d-flex justify-content-center">
 					<div class="back-button">
-					<a href="gender.html"><input type="button" name="BACK" value="BACK"></a>
+					<a href="terms-condition.html"><input type="button" name="BACK" value="BACK"></a>
 					</div>
 
 					<div class="next-button">
-						<input type="SUBMIT" name="FORWARDS-NEXT" value="NEXT">
+						<input type="SUBMIT" name="FORWARDS" value="NEXT" >
 					</div>
 				</div>
 			</div>
+		</form>
+		</div>
+	</div>
+</section>
+</body>
+</html>
+					
+
