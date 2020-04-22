@@ -1,0 +1,168 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/question2.css">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+   
+	<title>
+		Welcome to COVID-19 Risk Assessment
+	</title>
+	<script type="text/javascript">
+		function validate(){
+			var covid_area_yes = document.getElementById('covid_area_yes').checked;
+			var covid_area_no = document.getElementById('covid_area_no').checked;
+
+			var covid_case_yes = document.getElementById('covid_case_yes').checked;
+			var covid_case_no = document.getElementById('covid_case_no').checked;
+			var covid_case_no_no = document.getElementById('covid_case_no_no').checked;
+
+			var covid_illness_yes = document.getElementById('covid_illness_yes').checked;
+			var covid_illness_no = document.getElementById('covid_illness_no').checked;
+
+			var choice1 = document.getElementById('check1').checked;
+			var choice2 = document.getElementById('check2').checked;
+			var choice3 = document.getElementById('check3').checked;
+			var choice4 = document.getElementById('check4').checked;
+			var choice5 = document.getElementById('check5').checked;
+			var choice6 = document.getElementById('check6').checked;
+			var choice7 = document.getElementById('check7').checked;
+			var choice8 = document.getElementById('check8').checked;
+            
+            if ((covid_area_yes=="")&&(covid_area_no=="")) {
+            	window.alert("please select Do you have fever?");
+            	return false;
+            }	
+
+             if ((covid_case_yes=="")&&(covid_case_no=="")&&(covid_case_no_no)) {
+            	window.alert("please select Do you have cough?");
+            	return false;
+            }	
+
+            if ((covid_illness_yes=="")&&(covid_illness_no=="")) {
+            	window.alert("please select Are you having sudden onset of Severe Acute Respiratory Illness? (SARI)");
+            	return false;
+            }		
+
+
+
+			if ((choice1=="")&&(choice2=="")&&(choice3=="")&&(choice4=="")&&(choice4=="")&&(choice5=="")&&(choice6=="")&&(choice7=="")&&(choice8=="")) {
+				window.alert("choose atlese one from Do you have any of other chronic illness ?");
+				return false;
+			}
+			return true;
+
+
+			
+		}
+	</script>
+</head>
+<body>
+	<section id="header">
+	<div class="container">
+		<div class="parent-heading d-flex">
+			<div class="left-logo">
+				<img src="image/logo.png">
+				<h1>COVID - 19 Risk Assessment </h1>
+			</div>
+			<div class="right-logo ml-auto">
+				<input type="button" name="ENGLISH" value="ENGLISH">
+			</div>
+		</div>
+		<div class="underline-heading"></div>
+	</div>
+</section>
+
+<!---------------- question-area ------------------------>
+<section id="question-part">
+	<div class="container">
+		<div class="wrap">
+		<div class="hedaing-question">
+			<h1>Screening Questionnaire</h1>
+             <div class="heading-question-underline"></div>
+             <h3>Symtoms</h3>
+		</div>
+
+	<div class="parent-form">
+ 	<form method="post" onsubmit="return validate();" action="question3.html">
+ 	<div class="row">
+ 		<div class="col-md-12 col-lg-12">
+ 			<h1>1.Do you have fever? </h1>
+ 			<div class="form-groups" ><input type="radio" name="fever" id="covid_area_yes"><label>Yes</label></div>
+ 			<div class="form-groups active" ><input type="radio" name="fever" id="covid_area_no"><label>No</label></div>
+ 		</div>
+ 		<div class="heading-question-underline"></div>
+		
+		<div class="col-md-12 col-lg-12">
+ 			<h1>2.Do you have cough? </h1>
+ 			<div class="form-groups" ><input type="radio" name="case"  id="covid_case_yes"><label>Yes</label></div>
+ 			<div class="form-groups active" ><input type="radio" name="caough"   id="covid_case_no"><label>No</label></div>
+ 			<div class="form-groups active" ><input type="radio" name="caough"   id="covid_case_no_no"><label>No cough present</label></div>
+ 		</div>
+ 		<div class="heading-question-underline"></div>
+
+ 		<div class="col-md-12 col-lg-12">
+ 			<h1>3.Are you having shortness of breath? </h1>
+ 			<div class="form-groups" ><input type="radio" name="breath"  id="covid_case_yes"><label>Yes</label></div>
+ 			<div class="form-groups active" ><input type="radio" name="breath"   id="covid_case_no"><label>No</label></div>
+ 		</div>
+ 		<div class="heading-question-underline"></div>
+
+ 		<div class="col-md-12 col-lg-12">
+ 			<h1>4.Are you having sudden onset of Severe Acute Respiratory Illness? (SARI) </h1>
+ 			<div class="form-groups" ><input type="radio" name="SARI"  id="covid_illness_yes"><label>Yes</label></div>
+ 			<div class="form-groups active" ><input type="radio" name="SARI"   id="covid_illness_no"><label>No</label></div>
+ 		</div>
+ 		<div class="heading-question-underline"></div>
+
+ 		<div class="col-md-12 col-lg-12">
+ 			<h1>5.Do you have any of other chronic illness ? </h1>
+ 			<div class="form-groups"><input type="checkbox" name="disease" id="check1" value="Hypertension">
+ 				<label>Hypertension</label></div>
+
+ 					<div class="form-groups"><input type="checkbox" name="disease" id="check2" value="Diabetes">
+ 				<label>Diabetes</label></div>
+
+ 						<div class="form-groups"><input type="checkbox" name="disease" id="check3" value="COPD / Bronchial asthma">
+ 				<label>COPD / Bronchial asthma</label></div>
+
+ 				<div class="form-groups"><input type="checkbox" name="disease" id="check3" value="Cardiovascular disease">
+ 				<label>Cardiovascular disease</label></div>
+
+ 				<div class="form-groups"><input type="checkbox" name="disease" id="check4" value="Chronic liver disease">
+ 				<label>Chronic liver disease</label></div>
+
+ 				<div class="form-groups"><input type="checkbox" name="disease" id="check5" value="Chronic kidney disease">
+ 				<label>Chronic lung disease</label></div>
+
+ 					<div class="form-groups"><input type="checkbox" name="disease" id="check6" value="Cancer">
+ 				<label>Cancer</label></div>
+
+ 				<div class="form-groups"><input type="checkbox" name="disease" id="check7" value="Other">
+ 				<label>Other</label></div>
+
+ 				<div class="form-groups"><input type="checkbox" name="disease" id="check8" value="None of the above">
+ 				<label>None of the above</label></div>
+
+ 				<div class="parent-button d-flex justify-content-center">
+					<div class="back-button">
+					<a href="question.html"><input type="button" name="BACK" value="BACK"></a>
+					</div>
+
+					<div class="next-button">
+						<input type="SUBMIT" name="FORWARDS-next" value="NEXT">
+					</div>
+				</div>
+ 			</div>
+ 		</div>
+ 	</form>
+ </div>
+</div>
+</div>
+</section>
+</body>
+</html>
