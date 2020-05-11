@@ -1,0 +1,433 @@
+*{
+	font-family: 'Dosis', sans-serif;
+	padding: 0;
+	margin: 0;
+
+}
+body{
+	box-sizing: border-box;
+}
+
+/*global-classes*/
+
+.heading{
+	font-size: 32px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-bottom: 0;
+    color: #0f394c;
+    font-family: "Montserrat", sans-serif;
+}
+.heading-about{
+	font-size: 22px;
+    font-weight:600;
+    padding-bottom: 0;
+    color: #535074;
+    margin-top: 25px;
+
+}
+.text-center{
+    text-align: center;
+}
+button:focus,
+button:hover,
+button:active{
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+/*-------------------NAVBAR-AREA*/
+.navbar-brand{
+	font-size: 25px !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #49b5e7;
+    letter-spacing: 5px;
+  }
+.navbar-brand:hover{
+	color: #49b5e7;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+	font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #413e66;
+    margin-right: 25px;
+    line-height: 50px;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #49b5e7;
+    transition: 0.5s ease;
+}
+.navbar-toggler {
+   
+    font-size: 1.25rem;
+    line-height: 1;
+    border-radius: .25rem;
+    background-color: #49b5e7 !important;
+    border: 2px solid #49b5e7;
+}
+
+
+/*-------------------END-NAVBAR-AREA*/
+
+/*---------------banner-design*/
+
+
+.banner-about{
+	font-size: 42px;
+    font-weight: 700;
+    line-height: 60px;
+    color: white;
+    letter-spacing: 2px;
+}
+.banner-paragraph{
+	color: white;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.banner-area{
+     padding: 150px 0px;
+ }
+.banner-area::before{
+	content: "";
+	position: absolute;
+	background-color: black;
+	width: 100%;
+	height: 600px;
+	opacity: 0.7;
+    top: 0;
+}
+.banner-button{
+    font-weight: bolder;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 3px;
+    transition: 0.5s;
+    margin-top: 25px;
+    color: black;
+    background: #49b5e7;
+    text-transform: uppercase;
+    border: 2px solid #49b5e7;
+}
+.banner-button:hover{
+    background: transparent;
+    color: white;
+}
+
+/*---------------end banner-design*/
+
+
+/*--------------about-design*/
+
+.about-area{
+    padding: 50px 0px;
+}
+.about-iamge img{
+    width: 100%;
+    height: 400px;
+}
+.about-content{
+    color: #696592;
+    font-weight: 400;
+    font-size: 22px;
+    font-style: italic; 
+    margin-top: 10px;
+}
+.first-about-para{
+    font-weight: 400;
+    font-size:18px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+.second-about-para{
+   font-weight: 400;
+   font-size:18px;
+   margin-top: 20px; 
+   line-height: 25px;
+}
+
+/*---------------end about-design*/
+
+/*------------service-area-design*/
+.services-area{
+    padding: 80px 0px;
+    background: #f5f8fd;
+}
+.card-area{
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    padding: 40px;
+    transition: 2s ease;
+    overflow: hidden;
+}
+.card-area:hover{
+     transform: scale(1.1);
+     cursor: pointer;
+}
+.card-area h1{
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 40px;
+    margin-top: 20px;
+}
+.card-area p{
+    font-size: 17px;
+    line-height: 30px;
+}
+.card-area i{
+    font-size: 45px;
+}
+.parent-card{
+    margin-top: 50px;
+}
+
+
+/*choose-area design*/
+
+.choose-area{
+    padding: 80px 0px;
+}
+.image-choose img{
+    width: 100%;
+}
+.para-first{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 35px;
+    color: #535074;
+}
+.para-second{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-top: 25px;
+    color: #535074;
+}
+.choose-card i{
+    font-size: 36px;
+}
+.inner-content h1{
+    margin-top: -5px;
+    margin-left: 25px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #413e66;
+}
+
+.inner-content p{
+    margin-left: 25px;
+    font-size: 18px;
+    color: #555186;
+    font-weight: 400;
+}
+.parent-choosecard{
+    margin-top: 50px;
+}
+.choose-card{
+    margin-bottom: 35px;
+}
+.parent-choose{
+    margin-top: 50px;
+}
+
+/*end choose-area design*/
+
+/*call-to action*/
+.call-area{
+    background: #2d2b46;
+    padding: 40px 0px;
+}
+.call-text h1{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+.call-text p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 20px;
+}
+.button-call{
+    text-align: center;
+}
+.button-call a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 26px;
+    border-radius: 3px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 3px solid #fff;
+    color: #fff;
+    margin-top: 50px;
+}
+.button-call a:hover{
+    background: #1bb1dc;
+    border: 3px solid #1bb1dc;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*illustration-area design*/
+.illustration{
+    padding: 80px 0px;
+}
+.image-illustration img{
+    width: 100%;
+}
+.text-illustration{
+    margin-left: 45px;
+}
+.text-illustration h1{
+    font-weight: 600;
+    font-size: 34px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 45px;
+}
+.illus-para-one{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}
+.illus-para-two{
+     font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}
+.second-illustration-area{
+    margin-top: 80px;
+}
+
+/*porfolio-area-design*/
+
+#portfolio-area-id{
+    padding: 80px 0px;
+}
+.grid{
+    margin-top: 50px;
+}
+.button-group{
+    text-align: center;
+    margin-top: 50px;
+}
+.button-group button{
+    padding: 25px 20px;
+    border: 0;
+    background: transparent;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+.button-group button:hover{
+    color: #1bb1dc;
+}
+.button-group button + button{
+    padding-left: 5rem;
+}
+.our-portfolio img{
+    width: 100%;
+    height: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----------meadia-query*/
+@media only screen and (max-width: 992px){
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    background: rgba(40, 38, 70, 0.8);
+    text-align: center;
+    border-radius: 82px !important;
+    transition: 2s ease !important;
+    margin-top: 10px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+	color: white;
+}
+
+}
+@media only screen and (max-width: 362px){
+    .banner-area {
+    padding: 50px 0px;
+}
+.banner-about {
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 53px;
+    color: white;
+    letter-spacing: 5px;
+}
+.banner-paragraph {
+    color: white;
+    margin-top: 26px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.heading {
+    font-size: 43px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-bottom: 0;
+    color: #0f394c;
+    font-family: "Montserrat", sans-serif;
+}
+.about-content {
+    color: #696592;
+    font-weight: 400;
+    font-size: 22px;
+    font-style: italic;
+    margin-top: 20px;
+}
+.heading {
+    font-size: 35px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-bottom: 0;
+    color: #0f394c;
+    font-family: "Montserrat", sans-serif;
+}
+.heading-about {
+    font-size: 19px;
+    font-weight: 600;
+    padding-bottom: 0;
+    color: #535074;
+    margin-top: 25px;
+}
+.card-area p {
+    font-size: 19px;
+    line-height: 27px;
+}
+.text-illustration h1 {
+    font-weight: 600;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 39px;
+}
+.button-group button + button{
+    padding-left: 1rem;
+}
+}
