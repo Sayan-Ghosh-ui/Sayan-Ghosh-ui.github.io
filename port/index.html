@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="plugins/typed.js"></script>
+	<script type="text/javascript" src="plugins/main.js"></script>
+	<script type="text/javascript" src="plugins/isotope.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	 <script type="text/javascript">
+    $(document).ready(function(){
+      $('.responsive').slick({
+  dots: true,
+  infinite: true,
+  speed: 400,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        arrows:false,
+        dots:false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows:false,
+        dots:false
+         
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows:false,
+        dots:false
+       
+
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+    });
+  </script>
+
+
+	
+	<title>
+		DESIGNWALA DASHBOARD
+	</title>
+</head>
+<body>
+	<!-- --------------- navbar-area-design---------- -->
+		<header class="navbar-area">
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<div class="container">
+  <a class="navbar-brand" href="#">DESIGNWALA.</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#particles-js" style="color: #777;">Home...</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about-area-id">about</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services-id">services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio-area_id">portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#testimonial-area-id">testimonial</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#blog-area-id">blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact-area-id">contact</a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+</nav>
+</header>
+<!-- end-banner-design -->
+
+<!-- banner-area -->
+<section id="particles-js" class="banner-design" 
+  style="background: url(image/banner.jpg);
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 78px;
+  background-attachment: fixed;
+  position: relative;
+  animation-name:animate;
+  animation-direction:alternate-reverse;
+  animation-duration:7s ;
+  animation-fill-mode:forwards;
+  animation-iteration-count:infinite; ;
+  animation-play-state:running; ;
+  animation-timing-function:ease-in-out;
+  width: 100%;
+  " >
+<style type="text/css">
+    @keyframes animate{
+    0%{
+        background-image: url(image/banner2.jpg);
+    }
+    50%{
+        background-image: url(image/banner3.jpg);
+    }
+   100%{
+        background-image: url(image/banner.jpg);
+    }
+}
+</style>
+  
+  <div class="overlay" ></div>
+  <div class="container">
+    <div class="parent-banner">
+    <div class="heading-banner">
+      <h1>Hi, I Am</h1>
+      <h2>Sayan Ghosh....</h2>
+      <h3>Professional <span class="type"></span></h3>
+      <div class="banner-button_group">
+      <button class="resume">RESUME</button>
+      <button class="hire">HIRE ME</button>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<script type="text/javascript">
+  var typed = new Typed('.type',{
+  strings:['Web Designer And',
+           'Developer'],
+           typeSpeed:90,
+           backSpeed:90,
+           backDelay:1500,
+           loop:true,
+           
+});
+ </script>
+
+ <!-- end-banner-area -->
+
+
+ <!-- about-area -->
+ <section class="about-area" id="about-area-id">
+  <div class="container">
+    <div class="heading about-heading">
+    ABOUT ME</div>
+    <div class="heading-description">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, sit earum<br> voluptatum voluptates similique cupiditate.</div>
+  <div class="parent-about">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 p-4">
+        <div class="about-image">
+          <img src="image/person.jpg" alt="image-me">
+        </div>
+        <div class="about-image-text"><h1>SAYAN GHOSH</h1>
+                 <h2>Web Designer & Developer</h2>
+        </div>
+
+      </div>
+
+      <div class="col-md-6 col-md-6 col-sm-12 p-4">
+        <div class="about-text">
+          <p >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius odio at massa tempus dapibus. Duis diam magna, ornare in tellus et, congue eleifend justo. Duis vitae dui luctus.
+          </p>
+
+          <p>varius. Praesent luctus consequat mi at imperdiet. Nam vel elit semper, molestie diam vel, euismod leo. Phasellus hendrerit magna nibh, sed tempor nunc porttitor vel.</p>
+
+          <p>There anyone who loves or pursues or desires to obtain pain of it is because seds all occasionally circumstances.</p>
+        </div>
+        <div class="social-icons">
+          <span><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+          <span><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+          <span><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></span>
+          <span><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+        </div>
+        <div class="resume-about">
+          <button class="resume"><i class="fa fa-cloud-download" aria-hidden="true"></i>&nbsp;DOWNLOAD RESUME</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="parent-row">
+  <div class="row">
+    <div class="col-md-6 col-md-6 col-sm-12 p-4">
+      <div class="skills">
+        <li><h3>HTML5</h3><span class="bar"><span class="html"></span></span></li>
+        <li><h3>CSS3</h3><span class="bar"><span class="css"></span></span></li>
+        <li><h3>JAVASCRIPT</h3><span class="bar"><span class="java"></span></span></li>
+        <li><h3>JQUERY</h3><span class="bar"><span class="jquery"></span></span></li>
+        <li><h3>BOOTSTRAP</h3><span class="bar"><span class="bootstrap"></span></span></li>
+        <li><h3>PHP</h3><span class="bar"><span class="php"></span></span></li>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-md-6 col-sm-12 p-4">
+      <div class="about-image_2">
+        <img src="image/about.jpeg">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+
+<section class="services-area" id="services-id">
+  <div class="container">
+    <div class="heading heading_services">
+      SERVICES
+    </div>
+    <div class="heading-description">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, sit earum voluptatum<br> voluptates similique cupiditate.</div>
+      <div class="icon-area">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 col-sm-12 p-4">
+            <div class="icon-part">
+              <div class="icon">
+                <i class="fa fa-html5" aria-hidden="true"></i>
+              </div>
+              <h1>WEB DESIGNING</h1>
+              <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it. </P>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-4 col-sm-12 p-4">
+            <div class="icon-part">
+              <div class="icon">
+                <i class="fa fa-code" aria-hidden="true"></i>
+              </div>
+              <h1>WEB DEVELOPMENT</h1>
+              <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it. </P>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-4 col-sm-12 p-4">
+            <div class="icon-part">
+              <div class="icon">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              </div>
+              <h1>GRAPHIC DESIGNING</h1>
+              <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it. </P>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end-about-area -->
+
+  <!-- portfolio-area -->
+
+
+
+  <section class="portfolio-area" id="portfolio-area_id">
+    <div class="container">
+      <div class="heading heading-portfolio">
+        PORTFOLIO
+      </div>
+      <div class="heading-description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, sit earum voluptatum<br> voluptates similique cupiditate.
+      </div>
+
+      <div class="parent-portfolio">
+        <div class="button-group">
+          <button type="button" class="active">ALL</button>
+          <button type="button" data-filter=".design">WEB DESIGN</button>
+          <button type="button" data-filter=".development">WEB DEVELOPMENT</button>
+          <button type="button" data-filter=".graphic">GRAPHIC DESIGNING</button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="">
+
+        <div class="row gallery no-gutters">
+          <div class="col-md-3 col-lg-3 col-sm-12">
+            <div class="portfolio-image">
+              <img src="image/portfolio.jpg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Portfolio image 1</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 design">
+            <div class="portfolio-image">
+              <img src="image/portfolio2.jpg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Portfolio image 2</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 development">
+            <div class="portfolio-image">
+              <img src="image/portfolio3.jpg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Portfolio image 3</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 graphic design">
+            <div class="portfolio-image">
+              <img src="image/portfolio4.jpg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Portfolio image 4</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 development">
+            <div class="portfolio-image">
+              <img src="image/portfolio5.jpg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Portfolio image 5</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 design">
+            <div class="portfolio-image">
+              <img src="image/portfolio6.jpg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Portfolio image 6</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 design">
+            <div class="portfolio-image">
+              <img src="image/portfolio7.jpg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Portfolio image 7</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 graphic">
+            <div class="portfolio-image">
+              <img src="image/portfolio.jpg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Portfolio image 8</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- end-portfolio-area -->
+
+<!-- testimonial-area -->
+
+<section class="testimonial-area" id="testimonial-area-id" style="background:rgba(0, 0, 0, 0) url(image/image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+  ">
+    <div class="container">
+      <div class="parent-testimonial">
+      <div class="heading heading-testimonial">
+        HAPPY CLIENTS
+      </div>
+      <div class="heading-description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, sit earum voluptatum<br> voluptates similique cupiditate.
+      </div>
+
+      <div class="testimonial-card">
+        <div class="row responsive">
+
+          <div class="col-lg-12 p-4">
+            <div class="card-testimonial">
+            <div class="testimonial-image">
+              <img src="image/client1.jpg">
+            </div>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.
+            </p>
+            <h1>RAJIV KUNDU</h1>
+          </div>
+        </div>
+
+          <div class="col-lg-12 p-4">
+            <div class="card-testimonial">
+            <div class="testimonial-image">
+              <img src="image/client5.jpg">
+            </div>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.
+            </p>
+            <h1>ALEX COSTA</h1>
+          </div>
+        </div>
+
+          <div class="col-lg-12 p-4">
+            <div class="card-testimonial">
+            <div class="testimonial-image">
+              <img src="image/client3.jpg">
+            </div>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.
+            </p>
+            <h1>ELIANA BRIAN</h1>
+          </div>
+        </div>
+
+        <div class="col-lg-12 p-4">
+            <div class="card-testimonial">
+            <div class="testimonial-image">
+              <img src="image/client6.jpg">
+            </div>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.
+            </p>
+            <h1>SAM PARKAR</h1>
+          </div>
+        </div>
+
+        <div class="col-lg-12 p-4">
+            <div class="card-testimonial">
+            <div class="testimonial-image">
+              <img src="image/client7.jpg">
+            </div>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.
+            </p>
+            <h1>PETER PARKAR</h1>
+          </div>
+        </div>
+        <div class="col-lg-12 p-4">
+            <div class="card-testimonial">
+            <div class="testimonial-image">
+              <img src="image/client8.jpg">
+            </div>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.
+            </p>
+            <h1>ANGELINA LEE p-4</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- end-testimonial-area -->
+
+<!-- blog-area -->
+
+  <section class="blog-area" id="blog-area-id">
+  <div class="container">
+    <div class="heading heading-blog">
+      LATEST BLOG
+    </div>
+
+    <div class="heading-description">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, sit earum voluptatum<br> voluptates similique cupiditate.
+    </div>
+
+    <div class="parent-blog">
+      <div class="row">
+        <div class="col-md-4 col-lg-4 col-sm-12 p-4">
+          <div class="blog-card">
+            <div class="image-blog">
+              <img src="image/blog1.jpg">
+              <div class="overlay_blog"></div>
+            </div>
+            <h1>BLOG TITLE</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+            <button>READ MORE</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-4 col-sm-12 p-4">
+          <div class="blog-card">
+            <div class="image-blog">
+              <img src="image/blog2.jpg">
+              <div class="overlay_blog"></div>
+            </div>
+            <h1>BLOG TITLE</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+            <button>READ MORE</button>
+          </div>
+        </div>
+
+        
+
+        <div class="col-md-4 col-lg-4 col-sm-12 p-4">
+          <div class="blog-card">
+            <div class="image-blog">
+              <img src="image/blog4.jpg">
+              <div class="overlay_blog"></div>
+            </div>
+            <h1>BLOG TITLE</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+            <button>READ MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end-blog-area -->
+
+<!-- map-area -->
+
+<section class="map-area">
+<div class="map">
+  <div class="container-fluid">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29441.23288123609!2d88.46490251702681!3d22.72251263167732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8a209b5283ced%3A0x4989765a0652bd78!2sBarasat%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1589818305766!5m2!1sen!2sin" width="100%" height="450px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+</div>
+</section>
+
+<!-- end-map-area -->
+
+<!-- contact-area -->
+
+
+<section class="contact-area" id="contact-area-id">
+  <div class="container">
+    <div class="heading heading-contact">
+      CONTACT ME
+    </div>
+
+    <div class="heading-description">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, sit earum voluptatum<br> voluptates similique cupiditate.
+    </div>
+
+    <div class="parent-contact">
+      <div class="row">
+        <div class="col-md-6 col-lg-6 col-sm-12 p-4">
+          <div class="form-part">
+    <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Name</label>
+      <input type="text" class="form-control" name="NAME" placeholder="please enter your name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Email</label>
+      <input type="Email" class="form-control" name="EMAIL" placeholder="please enter your Email id">
+    </div>
+  </div>
+
+   <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Phone Number</label>
+      <input type="text" class="form-control" name="MOBILE" placeholder="Please enter your phone number">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Address</label>
+      <input type="Email" class="form-control" name="ADDRESS" placeholder="Please enter your phone number">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputAddress2">Leave a Message For Me</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+ 
+  <button type="submit" class="submit_button">Sign in</button>
+</form>
+</div>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 p-4">
+  <div class="text-contact">
+    <h1>GET IN TOUCH</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam voluptate alias quod voluptas mollitia unde deserunt ab.</p>
+    <div class="Address-part">
+      <i class="fa fa-map-marker" aria-hidden="true"></i><span>Address</span>
+      <p>Ghola road,Kazipara,Barasat,Kol-124</p>
+    </div>
+
+    <div class="email-part">
+      <i class="fa fa-envelope" aria-hidden="true"></i><span>Gmail</span>
+      <p>developervit2001@gmail.com</p>
+    </div>
+
+    <div class="phone-part">
+      <i class="fa fa-phone" aria-hidden="true"></i><span>Phone No.</span>
+      <p>8617260309</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- end-contact-area -->
+
+
+<section class="fotter-area">
+  <div class="container">
+    <div class="parent-contact">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 p-4">
+          <div class="text-contact_fotter">
+            <p class="fotter-para">© copyright DESIGNWALA. 2020. All Rights Reserved.<span> <a href="">admin</a></span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 p-4">
+          <div class="button-subs">
+            
+            <input type="email" name="SUBSCRIBER" placeholder="Please Enter Your Email-ID" class="email_sub">
+            <span><input type="submit" name="REGISTER" value="SUBSCRIBE" class="subscribe"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
