@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+	<script type="text/javascript" src="js/jquery.ripples-min.js"></script>
+	<script type="text/javascript" src="js/isotope.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<script type="text/javascript">
+    $(document).ready(function(){
+      $('.responsive').slick({
+  dots: true,
+  infinite: true,
+  speed: 400,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        arrows:false,
+        dots:false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows:false,
+        dots:false
+         
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows:false,
+        dots:false
+       
+
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+    });
+  </script>
+		<title>
+		HOME PAGE DASHBOARD
+	</title>
+</head>
+<body>
+	<nav class="fixed-top">
+		<div class="container">
+			<label class="logo">Sayan.</label>
+			<ul>
+				<li><a href="#banner-id">Home</a></li>
+				<li><a href="#about-area-id">About</a></li>
+				<li><a href="#services-area-id">Services</a></li>
+				<li><a href="#portfolio-area-id">Portfolio</a></li>
+				<li><a href="#testimonial-area-id">Testimonials</a></li>
+				<li><a href="#blog-area-id">Blog</a></li>
+				<li><a href="#contact-area-id">Contact</a></li>
+				</ul>
+				<label id="icon"><i class="fa fa-bars" aria-hidden="true"></i></label>
+			</div>
+		</nav>
+
+		<!-- banner-design -->
+		
+		<section class="banner" id="banner-id" style="
+		background:linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+		url(image/banner.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+        height: 100vh;
+		width: 100%">
+		<script type="text/javascript">
+			
+			$(document).ready(function(){
+				$('.banner').ripples({
+  
+  resolution: 512,
+	dropRadius: 10,
+	perturbance: 0.01,
+ 
+  
+});
+
+			});
+			
+		</script>
+		<div class="container">
+			<div class="heading-banner">
+				<h1>I AM <span class="type_js"></span></h1>
+			</div>
+			
+			<a href="#about-area-id" class="down">
+				
+			</a>
+			
+			
+
+			<script type="text/javascript">
+				var typed = new Typed('.type_js', {
+				strings: ["Sayan Ghosh", "Web Designer","Web Developer"],
+				typeSpeed: 60,
+				backSpeed:60,
+				smartBackspace: true,
+				backDelay: 1200,
+				loop:true,
+				cursorChar: '_',
+});
+			</script>
+		</div>
+	</section>
+
+	<!-- about-area-design -->
+	<section class="about-area" id="about-area-id">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 p-4">
+					<div class="image">
+						<img src="image/me.jpg">
+					</div>
+					<div class="button-about">
+						<a href=""><button class="cv">DOWNLOAD CV</button></a>
+						<span><a href="#contact-area-id"><button class="message">SEND MESSAGE</button></a></span>
+					</div>
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-sm-12 p-4">
+					<div class="parent-about">
+					<div class=" heading-about">About Me</div>
+					<h1>Web Designer &<span class="type_about"></span></h1>
+					<p>Hi! My name is <span class="sayan">Sayan Ghosh</span> . I am a Web Designer and Developer, and I'm very passionate and dedicated to my work. I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration to concept and execution.</p>
+					<div class="skill">
+						<li><h3>Html</h3><span class="bar"><span class="html"></span></span></li>
+						<li><h3>Css</h3><span class="bar"><span class="css"></span></span></li>
+						<li><h3>JavaScript</h3><span class="bar"><span class="javascript"></span></span></li>
+						<li><h3>Bootstrap</h3><span class="bar"><span class="bootstrap"></span></span></li>
+						<li><h3>Php & My Sql</h3><span class="bar"><span class="Php"></span></span></li>
+					</div>
+					<div class="email-block">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<span>developersayan2001@gmail.com</span>
+					</div>
+
+					<div class="phone-block">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<span>8617260309</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- end-of about-area -->
+<section class="services-area" id="services-area-id">
+	<div class="container-fluid">
+		<div class="heading heading-services">
+			Amazing Services
+		</div>
+		<div class="heading-description description-services">
+			I provide quality services
+		</div>
+
+		<div class="parent-services">
+			<div class="row">
+				<div class="col-md-4 col-lg-4 col-sm-12 p-2">
+					<div class="card-area">
+						<i class="fa fa-html5" aria-hidden="true"></i>
+						<h1>Web Design</h1>
+						<p>Web design is a similar process of creation, with the intention of presenting the content on electronic web pages...</p>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-lg-4 col-sm-12 p-2">
+					<div class="card-area">
+						<i class="fa fa-code" aria-hidden="true"></i>
+						<h1>Web Development</h1>
+						<p>Web development is a similar process of creation, with the intention of presenting the content on electronic web pages...</p>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-lg-4 col-sm-12 p-2">
+					<div class="card-area">
+						<i class="fa fa-line-chart" aria-hidden="true"></i>
+						<h1>Branding</h1>
+						<p>If your are starting a new company one of the most important things you can do is make sure to get the correct branding.</p>
+					</div>
+				</div>
+
+			
+
+				<div class="col-md-4 col-lg-4 col-sm-12 p-2">
+					<div class="card-area">
+						<i class="fa fa-industry" aria-hidden="true"></i>
+						<h1>Marketing</h1>
+						<p>Marketing is the study and management of exchange relationships. Marketing is used to create, keep and satisfy the customer.</p>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-lg-4 col-sm-12 p-2">
+					<div class="card-area">
+						<i class="fa fa-camera" aria-hidden="true"></i>
+						<h1>Photography</h1>
+						<p>Photography is a kind of virtual reality, and it helps if you can create the illusion of being in an interesting world...</p>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-lg-4 col-sm-12 p-2">
+					<div class="card-area">
+						<i class="fa fa-share-alt" aria-hidden="true"></i>
+						<h1>Social Media</h1>
+						<p>Social media is the collective of online communications channels dedicated to content-sharing and collaboration.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	
+</section>
+
+
+
+
+<!-- end-of-services-area -->
+
+<!-- portfolio-area -->
+<section class="portfolio-area" id="portfolio-area-id">
+	<div class="container">
+		<div class="heading heading-portfolio">
+			Portfolio
+		</div>
+		<div class="heading-description description-portfolio">
+			Check out latest work
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="parent-portfolio">
+			<div class="button-group">
+				<li><button type="button" class="active">All</button></li>
+				<li><button type="button" data-filter=".design">Web Design</button></li>
+				<li><button type="button" data-filter=".development">Web Development</button></li>
+				<li><button type="button" data-filter=".Photography">Photography</button></li>
+			</div>
+
+			<div class="row gallery no-gutters">
+         
+          <div class="col-md-3 col-lg-3 col-sm-12 design">
+            <div class="portfolio-image">
+              <img src="image/portfolio.jpg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Portfolio image 1</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 development">
+            <div class="portfolio-image">
+              <img src="image/portfolio2.jpg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Portfolio image 2</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 design">
+            <div class="portfolio-image">
+              <img src="image/portfolio3.jpg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Portfolio image 3</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 Photography">
+            <div class="portfolio-image">
+              <img src="image/portfolio4.jpg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Portfolio image 4</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 development">
+            <div class="portfolio-image">
+              <img src="image/portfolio5.jpg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Portfolio image 5</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 Photography">
+            <div class="portfolio-image">
+              <img src="image/portfolio6.jpg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Portfolio image 6</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 development">
+            <div class="portfolio-image">
+              <img src="image/portfolio7.jpg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Portfolio image 7</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 Photography">
+            <div class="portfolio-image">
+              <img src="image/portfolio.jpg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Portfolio image 8</div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+ 
+ <!-- end-of-portfolio -->
+
+ <!-- testimonial-area-design -->
+ <section class="testimonial-area" id="testimonial-area-id">
+ 	<div class="container">
+ 		<div class="heading heading-testimonial">
+ 			Testimonials
+ 		</div>
+ 		<div class="heading-description desciption-testimonial">
+ 			what my clients say
+ 		</div>
+ 		<div class="parent-testimonial">
+ 			<div class="row responsive">
+ 				<div class="col-lg-12">
+ 					<div class="card-testimonial">
+ 						<div class="image-testimonial">
+ 							<img src="image/client1.jpg">
+ 						</div>
+ 						<p>Sting team are easy to work with and helped me make amazing websites in a short amount of time. Thanks guys for all your hard work.</p>
+ 						<h1>Rozy Jeason</h1>
+ 					</div>
+ 				</div>
+
+ 				<div class="col-lg-12">
+ 					<div class="card-testimonial">
+ 						<div class="image-testimonial">
+ 							<img src="image/client2.jpg">
+ 						</div>
+ 						<p>Awesome to work with Sting. Incredibly organized, easy to communicate with, responsive with next iterations.</p>
+ 						<h1>Peter Parkar</h1>
+ 					</div>
+ 				</div>
+
+ 				<div class="col-lg-12">
+ 					<div class="card-testimonial">
+ 						<div class="image-testimonial">
+ 							<img src="image/client3.jpg">
+ 						</div>
+ 						<p>Sting team are easy to work with and helped me make amazing websites in a short amount of time. Thanks guys for all your hard work.</p>
+ 						<h1>Sam Joe</h1>
+ 					</div>
+ 				</div>
+
+ 				<div class="col-lg-12">
+ 					<div class="card-testimonial">
+ 						<div class="image-testimonial">
+ 							<img src="image/client2.jpg">
+ 						</div>
+ 						<p>We were looking for a web developer with a touch of modernism. Sting grasped our needs and produced a stunning design.</p>
+ 						<h1>Mark Zampa</h1>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </section>
+
+ <!-- end-of-testimonial -->
+
+ <!-- blog-area design -->
+ <section class="blog-area" id="blog-area-id">
+ 	<div class="container">
+ 		<div class="heading heading-blog">
+ 			Blog Area
+ 		</div>
+ 		<div class="heading-description description-blog">
+ 			Check out my latest blog
+ 		</div>
+ 		<div class="parent-blog">
+ 			<div class="row">
+ 				<div class="col-md-4 col-lg-4 col-sm-12 p-4">
+ 					<div class="blog-card">
+ 					<div class="image-blog">
+ 						<img src="image/blog1.jpg">
+ 					</div>
+ 					<h1>How to Create Great Logo for Your Business</h1>
+ 					<p>If you're reading this, you probably plan to start a small business or a side hustle very soon. And you probably have a couple ...</p>
+ 					<a href=""></a>
+ 					<div class="read_more">
+ 						<a href=""><button class="read_blog">Read More</button></a>
+ 					</div>
+ 				</div>
+ 			</div>
+
+ 				<div class="col-md-4 col-lg-4 col-sm-12 p-4">
+ 					<div class="blog-card">
+ 					<div class="image-blog">
+ 						<img src="image/blog2.jpg">
+ 					</div>
+ 					<h1>How to Create Great Logo for Your Business</h1>
+ 					<p>If you're reading this, you probably plan to start a small business or a side hustle very soon. And you probably have a couple ...</p>
+ 					<a href=""></a>
+ 					<div class="read_more">
+ 						<a href=""><button class="read_blog">Read More</button></a>
+ 					</div>
+ 				</div>
+ 			</div>
+
+ 				<div class="col-md-4 col-lg-4 col-sm-12 p-4">
+ 					<div class="blog-card">
+ 					<div class="image-blog">
+ 						<img src="image/blog3.jpg">
+ 					</div>
+ 					<h1>How to Create Great Logo for Your Business</h1>
+ 					<p>If you're reading this, you probably plan to start a small business or a side hustle very soon. And you probably have a couple ...</p>
+ 					<a href=""></a>
+ 					<div class="read_more">
+ 						<a href=""><button class="read_blog">Read More</button></a>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+</section>
+
+<!-- end-of blog-area -->
+<!-- together -->
+<section class="together">
+	<div class="container">
+		<div class="heading">
+			Let's Work Together
+		</div>
+		<div class="heading-description">Out believe has request not how comfort evident. Up delight cousins we feeling minutes.<br> Genius has looked end piqued spring.</div>
+
+		<div class="work_more">
+ 						<a href="#contact-area-id"><button class="work_together">Read More</button></a>
+ 		</div>
+ 	</div>
+ </section>
+ <!-- end-of-together -->
+
+ <!-- contact-area -->
+ <section class="contact-area" id="contact-area-id">
+ 	<div class="container">
+ 		<div class="heading">
+ 			Get in touch
+ 		</div>
+ 		<div class="heading-description">
+ 			Any question? Reach out to me and I will get back to you shortly.
+ 		</div>
+ 		<div class="parent-contact">
+ 	<form>
+  <div class="form-row ">
+    <div class="form-group col-md-12">
+      <label for="inputEmail4">Name</label>
+      <input type="text" class="form-control" id="inputEmail4" name="NAME" placeholder="please enter your name">
+    </div>
+    <div class="form-group col-md-12">
+      <label for="inputEmail4">Address</label>
+      <input type="text" class="form-control" id="inputEmail4" name="ADDRESS" placeholder="please enter your address">
+    </div>
+    <div class="form-group col-md-12">
+   <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="MESSAGE" placeholder="leave a message for me"></textarea>
+  </div>
+</div>
+<div class="send-button">
+  <input type="submit" name="SEND" value="SEND" class="send">
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- end-of-contact-area -->
+<!-- fotter-area -->
+<section class="fotter-area">
+	<div class="container">
+		<div class="parent-footer">
+			
+		<div class="heading-fotter">
+			© Copyright 2020. Template has been designed by Sayan Ghosh
+		</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
