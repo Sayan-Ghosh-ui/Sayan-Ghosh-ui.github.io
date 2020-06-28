@@ -431,7 +431,38 @@ nav ul.show{
 .parent-testimonial{
 	margin-top: 80px;
 }
-
+.button_testimonial{
+	margin-top: 80px;
+	text-align: center;
+}
+.button_testimonial h1{
+	font-size: 30px;
+	font-weight: 700;
+}
+.button_testimonial h1 span{
+	font-size: 30px;
+	color: #FF506D;
+	font-weight: 800;
+}
+.button_testimonial a{
+		color: #fff;
+    text-decoration: none;
+    background-color: #FF506D;
+    padding: 8px 35px;
+    display: inline-block;
+    font-family: "Montserrat";
+    font-weight: 600;
+    border-radius: 3px;
+    transition: 1s ease;
+    border: 2px solid #FF506D;
+    margin-top: 25px;
+}
+.button_testimonial a:hover{
+	color: #6f6f6f;
+	background: transparent;
+	border: 2px solid #FF506D;
+	text-decoration: none;
+}
 /*blog-area*/
 
 .blog-area{

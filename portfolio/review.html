@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/review.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ripples-min.js"></script>
+	<script type="text/javascript">
+			$(document).ready(function(){
+				$('.banner').ripples({
+  resolution: 512,
+	dropRadius: 10,
+	perturbance: 0.01,
+ });
+
+});
+</script>
+<script type="text/javascript">
+	function validation(){
+		var name = document.forms['registration']['NAME'];
+		var message = document.forms['registration']['MESSAGE'];
+		var image = document.forms['registration']['PHOTO'];
+
+		if (name.value=="") {
+			window.alert("please enter your name");
+			name.focus();
+			return false;
+		}
+		if (message.value=="") {
+			window.alert("please enter a review for me")
+			message.focus();
+			return false;
+		}
+		if (image.value=="") {
+			window.alert("please upload your image");
+			image.focus();
+			return false;
+		}
+		return true;
+	}
+</script>
+	<title>review portal</title>
+</head>
+<body>
+	<section class="opinion">
+		<div class="container">
+			<div class="heading">
+				Thank you so much for coming here...!
+			</div>
+			<p class="heading-description">
+				Please give a review,Thank You
+			</p>
+		</div>
+	</section>
+
+	<section class="banner" id="particles-js" style="background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(image/form-banner.jpg);height: 100vh;background-repeat: no-repeat;background-position: center;background-size: cover;padding: 100px 0px">
+		<div class="container">
+			<div class="wrap">
+		<div class="parent-from">
+<form method="post" enctype="multipart/form-data" name="registration" onsubmit="return validation()">
+
+<div class="form-row ">
+    <div class="form-group col-md-12">
+      <label for="inputEmail4">Name</label>
+      <input type="text" class="form-control" id="inputEmail4" name="NAME" placeholder="please enter your name">
+    </div>
+ <div class="form-group col-md-12">
+   <label for="exampleFormControlTextarea1">Add review</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="MESSAGE" placeholder="leave a message for me"></textarea>
+  </div>
+  <div class="form-group col-md-12">
+      <label for="inputEmail4">Add your image</label>
+      <br>
+      <input type="file" class="image"  name="PHOTO" placeholder="please enter your name">
+    </div>
+
+</div>
+<div class="review-button">
+  <input type="submit" name="SEND" value="SEND" class="review">
+</div> 
+</form>
+</div>
+</div>
+</div>
+</section>
+
+</body>
+</html>
