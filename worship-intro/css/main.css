@@ -101,6 +101,9 @@ nav ul.show{
 	background: #2C2C2C;
 	color: white;
 }
+.hero-banner-description h4{
+	margin-top: 25px;
+}
 .heading-fotter{
 	font-size: 25px;
 	font-weight: 600;
