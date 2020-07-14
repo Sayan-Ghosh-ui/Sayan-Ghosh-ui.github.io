@@ -1,4 +1,4 @@
-html<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -11,22 +11,26 @@ html<!DOCTYPE html>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/jquery.ripples-min.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<title>About Worship</title>
 	<script type="text/javascript">
-		$(document).ready(function(){
-			$('.carousel').carousel({
-  			interval: 1500
-})
-		})
+		setTimeout(function(){
+			$('.loder_bg').fadeToggle();
+		},1500);
 	</script>
 </head>
 <body>
-  
+  <div class="loder_bg">
+		<div class="loder"></div>
+	</div>
+	
   <nav>
 		<div class="container">
-			<label class="logo"><img src="image/logo.png"></label>
+			<label class="logo"><img src="image/logo-maker.png" style="width: 250px;height: 70px"></label>
 			<ul>
-				<li><a href="home.html">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="services.html">Services</a></li>
 				<li><a href="gallery.html">Gallery</a></li>
@@ -45,6 +49,17 @@ html<!DOCTYPE html>
 
   
 <section class="about-section" style="background:linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(image/about-banner.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;height: 100vh;padding: 150px 0px;background-attachment: fixed;">
+	<script type="text/javascript">
+			$(document).ready(function(){
+			$('.about-section').ripples({
+  
+  resolution: 512,
+	dropRadius: 10,
+	perturbance: 0.01,
+ });
+});
+</script>
+
 <div class="container">
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12">
@@ -63,10 +78,10 @@ html<!DOCTYPE html>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="heading">
+					<div class="heading" data-aos="fade-up" data-aos-duration="1000">
 						About Worship
 					</div>
-					<div class="heading-description">
+					<div class="heading-description" data-aos="fade-up" data-aos-duration="1500">
 						There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
 					</div>
 				</div>
@@ -77,7 +92,7 @@ html<!DOCTYPE html>
 					<div class="about-image">
 						<img src="image/about-description.jpg">
 					</div>
-					<div class="social-media">
+					<div class="social-media" data-aos="zoom-in" data-aos-duration="3000">
 					<span><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></span>
 					<span><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
 					<span><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
@@ -85,7 +100,7 @@ html<!DOCTYPE html>
 				</div>
 
 				<div class="col-lg-6 col-md-6 col-sm-12 pt-5 p-3">
-					<div class="about-description-wrapper">
+					<div class="about-description-wrapper" data-aos="zoom-in" data-aos-duration="3000">
 						<h1>Worship Interior</h1>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
 
@@ -117,9 +132,9 @@ html<!DOCTYPE html>
 	<div class="heading-fotter">
 		Quick Links
 	</div>
-	<h3><a href="home.html">Home</a></h3>
+	<h3><a href="index.html">Home</a></h3>
 	<h3><a href="about.html">About</a></h3>
-	<h3><a href="service.html">Service</a></h3>
+	<h3><a href="services.html">Service</a></h3>
 	<h3><a href="gallery.html">Gallery</a></h3>
 	<h3><a href="contact.html">Contact</a></h3>
 </div>
@@ -129,13 +144,17 @@ html<!DOCTYPE html>
 	Address
    </div>
    <h3>Ghola Road,Kazipara,Barasat</h3>
-   <h3>Ph:8617260309</h3>
-   <h3>developersayan@gmail.com</h3>
+   <h3>Ph: 8013846718/8910695213</h3>
+   <h3>Email: rahul8013846718@gmail.com</h3>
 </div>
 
 </div>
 </div>
 </section>
+
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>

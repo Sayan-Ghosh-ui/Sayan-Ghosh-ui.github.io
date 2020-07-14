@@ -19,6 +19,15 @@
 	margin-top: 25px;
 }
 
+@media(max-width: 479px){
+	.heading{
+	font-size: 30px;
+	}
+	.heading-description{
+		font-size: 14px;
+	}
+}
+
 nav ul{
 	float: right;
 	z-index: 999;
@@ -92,6 +101,9 @@ nav ul li{
 }
 nav ul.show{
 	left: 0;
+}
+.logo img{
+	width: 120px !important;
 }
 }
 
@@ -210,12 +222,12 @@ nav ul.show{
 	padding: 100px 0px;
 }
 .hero-banner h1 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700px;
     color: white;
 }
 .hero-banner h2 {
-    font-size: 33px;
+    font-size: 25px;
     font-weight: 700;
     color: white;
 }
@@ -224,6 +236,12 @@ nav ul.show{
     font-weight: 500;
     margin-top: 30px;
     color: white;
+}
+.hero-banner-description h4{
+	font-size: 17px;
+}
+.banner-button a{
+	padding: 5px 10px;
 }
 }
 
@@ -568,4 +586,74 @@ label{
 	.contact-wrapper{
 		background-attachment: scroll;
 	}
+}
+
+
+
+
+/*whatsapp*/
+.whatsapp_float {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+        font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+        z-index:100;
+}
+
+.whatsapp-icon {
+	margin-top:16px;
+}
+/* for mobile */
+@media screen and (max-width: 767px){
+     .whatsapp-icon {
+	 margin-top:20px;
+     }
+    .whatsapp_float {
+        width: 50px;
+        height: 60px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+
+
+/*loderr*/
+
+		.loder_bg{
+			position: fixed;
+			z-index: 999999;
+			background:black;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.loder {
+  border: 16px solid #FAB702;
+  border-radius: 50%;
+  border-top: 16px solid black;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

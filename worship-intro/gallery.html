@@ -1,4 +1,4 @@
-html<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -11,14 +11,26 @@ html<!DOCTYPE html>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/jquery.ripples-min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript">
+    setTimeout(function(){
+      $('.loder_bg').fadeToggle();
+    },1500);
+  </script>
 	<title>Gallery Worship</title>
 </head>
 <body>
+  <div class="loder_bg">
+    <div class="loder"></div>
+  </div>
+
 	 <nav>
     <div class="container">
-      <label class="logo"><img src="image/logo.png"></label>
+      <label class="logo"><img src="image/logo-maker.png" style="width: 250px;height: 70px"></label>
       <ul>
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="gallery.html">Gallery</a></li>
@@ -37,6 +49,17 @@ html<!DOCTYPE html>
 
 	<!-- gallery-wrapper -->
 	<section class="gallery-wrapper" style="background: url(image/gallery-banner.jpg);background-size: cover;height: 100vh;background-position: center;background-attachment: fixed;padding: 150px 0px">
+
+      <script type="text/javascript">
+      $(document).ready(function(){
+      $('.gallery-wrapper').ripples({
+  
+  resolution: 512,
+  dropRadius: 10,
+  perturbance: 0.01,
+ });
+});
+</script>
 		<div class="container">
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12">
@@ -55,10 +78,10 @@ html<!DOCTYPE html>
 	<div class="container">
 		<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="heading">
+					<div class="heading" data-aos="fade-up" data-aos-duration="1000">
 						Gallery Of Worship
 					</div>
-					<div class="heading-description">
+					<div class="heading-description" data-aos="fade-up" data-aos-duration="2000">
 						There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
 					</div>
 				</div>
@@ -69,7 +92,7 @@ html<!DOCTYPE html>
 		<div class="row gallery no-gutters">
            <div class="col-md-3 col-lg-3 col-sm-12 design">
             <div class="portfolio-image">
-              <img src="image/office1.jpg" alt="img1">
+              <img src="image/worship1.jpeg" alt="img1">
               <div class="overlay-portfolio-part_1">
                 <div class="text">Portfolio image 1</div>
               </div>
@@ -78,7 +101,7 @@ html<!DOCTYPE html>
 
           <div class="col-md-3 col-lg-3 col-sm-12 development">
             <div class="portfolio-image">
-              <img src="image/office2.jpg" alt="img1">
+              <img src="image/worship2.jpeg" alt="img1">
               <div class="overlay-portfolio-part_1">
                 <div class="text">Gallery</div>
               </div>
@@ -87,7 +110,7 @@ html<!DOCTYPE html>
 
           <div class="col-md-3 col-lg-3 col-sm-12 design">
             <div class="portfolio-image">
-              <img src="image/office3.jpg" alt="img1">
+              <img src="image/worship3.jpeg" alt="img1">
               <div class="overlay-portfolio-part_1">
                 <div class="text">Gallery</div>
               </div>
@@ -96,7 +119,7 @@ html<!DOCTYPE html>
 
           <div class="col-md-3 col-lg-3 col-sm-12 Photography">
             <div class="portfolio-image">
-              <img src="image/resident2.jpg" alt="img1">
+              <img src="image/worship4.jpeg" alt="img1">
               <div class="overlay-portfolio-part_1">
                 <div class="text">Gallery</div>
               </div>
@@ -105,7 +128,7 @@ html<!DOCTYPE html>
 
           <div class="col-md-3 col-lg-3 col-sm-12 development">
             <div class="portfolio-image">
-              <img src="image/commercial2.jpg" alt="img1">
+              <img src="image/worship5.jpeg" alt="img1">
               <div class="overlay-portfolio-part_1">
                 <div class="text">Gallery</div>
               </div>
@@ -114,7 +137,7 @@ html<!DOCTYPE html>
 
           <div class="col-md-3 col-lg-3 col-sm-12 Photography">
             <div class="portfolio-image">
-              <img src="image/commercial3.jpg" alt="img1">
+              <img src="image/worship6.jpeg" alt="img1">
               <div class="overlay-portfolio-part_1">
                 <div class="text">Gallery</div>
               </div>
@@ -123,7 +146,7 @@ html<!DOCTYPE html>
 
           <div class="col-md-3 col-lg-3 col-sm-12 development">
             <div class="portfolio-image">
-              <img src="image/resident1.jpg" alt="img1">
+              <img src="image/worship7.jpeg" alt="img1">
               <div class="overlay-portfolio-part_1">
                 <div class="text">Gallery</div>
               </div>
@@ -132,7 +155,7 @@ html<!DOCTYPE html>
 
           <div class="col-md-3 col-lg-3 col-sm-12 Photography">
             <div class="portfolio-image">
-              <img src="image/resident2.jpg" alt="img1">
+              <img src="image/worship8.jpeg" alt="img1">
               <div class="overlay-portfolio-part_1">
                 <div class="text">Gallery</div>
               </div>
@@ -141,7 +164,7 @@ html<!DOCTYPE html>
 
            <div class="col-md-3 col-lg-3 col-sm-12 Photography">
             <div class="portfolio-image">
-              <img src="image/gallery1.jpg" alt="img1">
+              <img src="image/worship9.jpeg" alt="img1">
               <div class="overlay-portfolio-part_1">
                 <div class="text">Gallery</div>
               </div>
@@ -150,7 +173,7 @@ html<!DOCTYPE html>
 
            <div class="col-md-3 col-lg-3 col-sm-12 Photography">
             <div class="portfolio-image">
-              <img src="image/gallery2.jpg" alt="img1">
+              <img src="image/worship10.jpeg" alt="img1">
               <div class="overlay-portfolio-part_1">
                 <div class="text">Gallery</div>
               </div>
@@ -159,7 +182,7 @@ html<!DOCTYPE html>
 
           <div class="col-md-3 col-lg-3 col-sm-12 Photography">
             <div class="portfolio-image">
-              <img src="image/gallery3.jpg" alt="img1">
+              <img src="image/worship11.jpeg" alt="img1">
               <div class="overlay-portfolio-part_1">
                 <div class="text">Gallery</div>
               </div>
@@ -168,7 +191,115 @@ html<!DOCTYPE html>
 
           <div class="col-md-3 col-lg-3 col-sm-12 Photography">
             <div class="portfolio-image">
-              <img src="image/gallery4.jpg" alt="img1">
+              <img src="image/worship12.jpeg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Gallery</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 Photography">
+            <div class="portfolio-image">
+              <img src="image/worship13.jpeg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Gallery</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 Photography">
+            <div class="portfolio-image">
+              <img src="image/worship14.jpeg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Gallery</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 Photography">
+            <div class="portfolio-image">
+              <img src="image/worship15.jpeg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Gallery</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 Photography">
+            <div class="portfolio-image">
+              <img src="image/worship16.jpeg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Gallery</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 Photography">
+            <div class="portfolio-image">
+              <img src="image/worship23.jpeg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Gallery</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 Photography">
+            <div class="portfolio-image">
+              <img src="image/worship18.jpeg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Gallery</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 Photography">
+            <div class="portfolio-image">
+              <img src="image/worship19.jpeg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Gallery</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 Photography">
+            <div class="portfolio-image">
+              <img src="image/worship20.jpeg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Gallery</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 Photography">
+            <div class="portfolio-image">
+              <img src="image/worship21.jpeg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Gallery</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 Photography">
+            <div class="portfolio-image">
+              <img src="image/worship22.jpeg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Gallery</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 Photography">
+            <div class="portfolio-image">
+              <img src="image/worship23.jpeg" alt="img1">
+              <div class="overlay-portfolio-part_1">
+                <div class="text">Gallery</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-12 Photography">
+            <div class="portfolio-image">
+              <img src="image/worship24.jpeg" alt="img1">
               <div class="overlay-portfolio-part_1">
                 <div class="text">Gallery</div>
               </div>
@@ -197,9 +328,9 @@ html<!DOCTYPE html>
   <div class="heading-fotter">
     Quick Links
   </div>
-  <h3><a href="home.html">Home</a></h3>
+  <h3><a href="index.html">Home</a></h3>
   <h3><a href="about.html">About</a></h3>
-  <h3><a href="service.html">Service</a></h3>
+  <h3><a href="services.html">Service</a></h3>
   <h3><a href="gallery.html">Gallery</a></h3>
   <h3><a href="contact.html">Contact</a></h3>
 </div>
@@ -209,14 +340,17 @@ html<!DOCTYPE html>
   Address
    </div>
    <h3>Ghola Road,Kazipara,Barasat</h3>
-   <h3>Ph:8617260309</h3>
-   <h3>developersayan@gmail.com</h3>
+   <h3>Ph: 8013846718/8910695213</h3>
+   <h3>Email: rahul8013846718@gmail.com</h3>
 </div>
 
 </div>
 </div>
 </section>
 
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>

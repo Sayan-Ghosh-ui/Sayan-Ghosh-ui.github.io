@@ -1,4 +1,4 @@
-html<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -11,14 +11,26 @@ html<!DOCTYPE html>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/jquery.ripples-min.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<title>Services Worship</title>
+	<script type="text/javascript">
+		setTimeout(function(){
+			$('.loder_bg').fadeToggle();
+		},1500);
+	</script>
 </head>
 <body>
+	<div class="loder_bg">
+		<div class="loder"></div>
+	</div>
+
 	<nav>
 		<div class="container">
-			<label class="logo"><img src="image/logo.png"></label>
+			<label class="logo"><img src="image/logo-maker.png" style="width: 250px;height: 70px"></label>
 			<ul>
-				<li><a href="home.html">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="services.html">Services</a></li>
 				<li><a href="gallery.html">Gallery</a></li>
@@ -36,6 +48,17 @@ html<!DOCTYPE html>
 		</script>
 
 	<section class="services-page" style="background: url(image/process.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;height: 100vh;padding: 150px 0px;">
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+			$('.services-page').ripples({
+  
+  resolution: 512,
+	dropRadius: 10,
+	perturbance: 0.01,
+ });
+});
+</script>
 		<div class="container">
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12">
@@ -54,10 +77,10 @@ html<!DOCTYPE html>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="heading">
+					<div class="heading" data-aos="fade-up" data-aos-duration="1000">
 						Services
 					</div>
-					<div class="heading-description">
+					<div class="heading-description" data-aos="fade-up" data-aos-duration="1500">
 						There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
 					</div>
 				</div>
@@ -66,7 +89,7 @@ html<!DOCTYPE html>
 			<div class="row choose-row">
 
 					<div class="col-lg-4 col-md-4 col-sm-12 pt-5">
-		      		<div class="choose-card">
+		      		<div class="choose-card" data-aos="fade-up" data-aos-duration="2000">
 		      			<i class="fa fa-paper-plane" aria-hidden="true"></i>
 		      			<h1>Interior Expertise</h1>
 		      			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
@@ -74,7 +97,7 @@ html<!DOCTYPE html>
 		      	</div>
 
 		      	<div class="col-lg-4 col-md-4 col-sm-12 pt-5">
-		      		<div class="choose-card">
+		      		<div class="choose-card" data-aos="fade-up" data-aos-duration="2500">
 		      			<i class="fa fa-money" aria-hidden="true"></i>
 		      			<h1>REASONABLE PRICE</h1>
 		      			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
@@ -82,7 +105,7 @@ html<!DOCTYPE html>
 		      	</div>
 
 		      	<div class="col-lg-4 col-md-4 col-sm-12 pt-5">
-		      		<div class="choose-card">
+		      		<div class="choose-card" data-aos="fade-up" data-aos-duration="2700">
 		      			<i class="fa fa-globe" aria-hidden="true"></i>
 		      			<h1>GUARANTEED WORKS</h1>
 		      			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
@@ -90,7 +113,7 @@ html<!DOCTYPE html>
 		      	</div>
 
 		      	<div class="col-lg-4 col-md-4 col-sm-12 pt-5">
-		      		<div class="choose-card">
+		      		<div class="choose-card" data-aos="fade-up" data-aos-duration="2000">
 		      			<i class="fa fa-quora" aria-hidden="true"></i>
 		      			<h1>Quality work</h1>
 		      			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
@@ -98,7 +121,7 @@ html<!DOCTYPE html>
 		      	</div>
 
 		      	<div class="col-lg-4 col-md-4 col-sm-12 pt-5">
-		      		<div class="choose-card">
+		      		<div class="choose-card" data-aos="fade-up" data-aos-duration="2500">
 		      			<i class="fa fa-envelope-open" aria-hidden="true"></i>
 		      			<h1>Free Consultation</h1>
 		      			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
@@ -106,7 +129,7 @@ html<!DOCTYPE html>
 		      	</div>
 
 		      	<div class="col-lg-4 col-md-4 col-sm-12 pt-5">
-		      		<div class="choose-card">
+		      		<div class="choose-card" data-aos="fade-up" data-aos-duration="2700">
 		      			<i class="fa fa-phone" aria-hidden="true"></i>
 		      			<h1>24/7 Support</h1>
 		      			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
@@ -135,9 +158,9 @@ html<!DOCTYPE html>
 	<div class="heading-fotter">
 		Quick Links
 	</div>
-	<h3><a href="home.html">Home</a></h3>
+	<h3><a href="index.html">Home</a></h3>
 	<h3><a href="about.html">About</a></h3>
-	<h3><a href="service.html">Service</a></h3>
+	<h3><a href="services.html">Service</a></h3>
 	<h3><a href="gallery.html">Gallery</a></h3>
 	<h3><a href="contact.html">Contact</a></h3>
 </div>
@@ -146,15 +169,17 @@ html<!DOCTYPE html>
 	<div class="heading-fotter">
 	Address
    </div>
-   <h3>Ghola Road,Kazipara,Barasat</h3>
-   <h3>Ph:8617260309</h3>
-   <h3>developersayan@gmail.com</h3>
+  <h3>Ghola Road,Kazipara,Barasat</h3>
+   <h3>Ph: 8013846718/8910695213</h3>
+   <h3>Email: rahul8013846718@gmail.com</h3>
 </div>
-
 </div>
 </div>
 </section>
 
+<script>
+  AOS.init();
+</script>
 
 
 
