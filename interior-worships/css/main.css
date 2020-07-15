@@ -659,3 +659,21 @@ label{
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
+
+/*additional*/
+
+.image-service-wrapper img{
+	width: 100%;
+	height: 400px;
+}
+.additional-heading-services h5{
+	font-size: 20px;
+	margin-bottom: 30px;
+	color: white;
+	margin-left: 50px;
+}
+.additional{
+	margin-top: 50px;
+}
