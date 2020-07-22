@@ -1,0 +1,447 @@
+*{
+	padding: 0;
+	margin: 0;
+	line-height: 1.75;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/*navbar*/
+
+.navbar-expand-lg .navbar-nav .nav-link{
+	margin-right: 25px;
+	font-size: 18px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: #515184;
+}
+.submit-button a{
+	padding: 10px 50px !important;
+    min-width: 150px !important;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #3639AE;
+    border-color: #3639AE;
+}
+.submit-button a:hover{
+	text-decoration: none;
+	color: white;
+}
+.dropdown:hover>.dropdown-menu{
+	display: block;
+}
+.dropdown-menu{
+	background: #fff;
+    padding: 5px 0 !important;
+    display: block;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+    border: 0px;
+    margin-top: 5px !important;
+    min-width: 200px !important;
+}
+.dropdown-item{
+	color: #515184 !important;
+    line-height: 38px;
+    display: inline-block;
+    font-size: 15px;
+  }
+ .navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/*banner-area*/
+.banner-area{
+    min-height: calc(100vh);
+    background: linear-gradient(to bottom, #06cdec, rgba(30, 12, 157, 0.4));
+    opacity: 0.95;
+    padding: 50px;
+}
+.banner-content h1{
+	font-size: 60px;
+    line-height: 60px;
+    color: #121158;
+    font-weight: bold;
+}
+.protect{
+	padding: 20px 50px!important;
+    color: #fff !important;
+    background-color: #121158 !important;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 30px !important;
+}
+.banner-image img{
+	width: 350px;
+}
+
+/*brand-area*/
+.brand-part{
+	position: relative;
+    width: 100%;
+    left: 0;
+    top: -73px;
+}
+.bg-white{
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/*symptom-wrap*/
+.symptom-wrap{
+	padding: 50px 0px;
+}
+.heading-symtom h5{
+	font-size: 18px;
+    font-weight: 600;
+    color: #121158;
+}
+.heading-symtom h2{
+	color: #293f73;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 65px;
+    margin-bottom: 40px;
+    color: #121158;
+}
+.icon{
+	width: 55px;
+    height: 60px;
+    position: relative;
+    margin: 0px 0px 25px;
+    font-size: 24px;
+    -webkit-border-radius: 50%/14%;
+    border-radius: 50%/14%;
+    color: white;
+    text-align: center;
+    line-height: 64px;
+    background-color: #7142f8;
+}
+.card-part h4{
+	font-size: 24px;
+    font-weight: bold;
+    color: #121158;
+}
+.card-part{
+	background: #fff;
+    box-shadow: 0px 30px 60px rgba(160, 159, 202, 0.45);
+    padding: 20px 30px 20px;
+    border-radius: 5px;
+}
+.icon2{
+	width: 55px;
+    height: 60px;
+    position: relative;
+    margin: 0px 0px 25px;
+    font-size: 24px;
+    -webkit-border-radius: 50%/14%;
+    border-radius: 50%/14%;
+    color: white;
+    text-align: center;
+    line-height: 64px;
+    background-color: #fa4c9a;
+}
+.icon3{
+	width: 55px;
+    height: 60px;
+    position: relative;
+    margin: 0px 0px 25px;
+    font-size: 24px;
+    -webkit-border-radius: 50%/14%;
+    border-radius: 50%/14%;
+    color: white;
+    text-align: center;
+    line-height: 64px;
+	background-color: #ecbf24;
+}
+.icon4{
+	width: 55px;
+    height: 60px;
+    position: relative;
+    margin: 0px 0px 25px;
+    font-size: 24px;
+    -webkit-border-radius: 50%/14%;
+    border-radius: 50%/14%;
+    color: white;
+    text-align: center;
+    line-height: 64px;
+    background-color: #35bfe7;
+}
+.icon5{
+	width: 55px;
+    height: 60px;
+    position: relative;
+    margin: 0px 0px 25px;
+    font-size: 24px;
+    -webkit-border-radius: 50%/14%;
+    border-radius: 50%/14%;
+    color: white;
+    text-align: center;
+    line-height: 64px;
+    background-color: #f38650;
+}
+.icon6{
+	width: 55px;
+    height: 60px;
+    position: relative;
+    margin: 0px 0px 25px;
+    font-size: 24px;
+    -webkit-border-radius: 50%/14%;
+    border-radius: 50%/14%;
+    color: white;
+    text-align: center;
+    line-height: 64px;
+    background-color: #5cbd2c;
+}
+
+/*app-section*/
+.app-section{
+	padding: 50px 0px;
+}
+.app-text h1{
+	font-size: 55px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: #121158;
+}
+.app-text p{
+	color: #515184;
+}
+.download a{
+	padding: 20px 40px;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #3639AE;
+    border-color: #3639AE;
+    border-radius: 10px;
+    color: white;
+}
+.download a:hover{
+	color: white;
+	text-decoration: none;
+}
+.download{
+	margin-top: 25px;
+}
+
+/*counter-part*/
+
+.counter-part{
+	padding: 50px 0px;
+}
+.count i{
+   font-size: 35px;
+   color: #121158;
+}
+.count h3{
+	font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    color: #121158;
+}
+.count span{
+	font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+/*question-wraper*/
+.question-wraper{
+	padding: 50px 0px;
+}
+.question a{
+	font-size: 20px;
+    color: #121158;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 5px;
+}
+.question a:hover{
+	text-decoration: none;
+	color: #121158;
+}
+#demo{
+	color: #515184;
+	margin-top: 25px;
+}
+.question{
+	margin-top: 80px; 
+}
+
+/*app-wrapper*/
+.app-wrapper{
+	padding: 50px 0px;
+}
+.app-wrap{
+	background: linear-gradient(to right, #1e0c9d, #06cdec);
+    padding: 100px 130px !important;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+.app-wrapper-text h1{
+	font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.app-wrapper-text p{
+	color: #fff;
+}
+.app-download a{
+	padding: 20px 40px;
+    color: #111;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #fff;
+}
+.app-download a:hover{
+	color: #111;
+	text-decoration: none;
+}
+.app-download{
+	margin-top: 25px;
+}
+.app-phone{
+	width: 100%;
+	
+}
+/*blog-wrapper*/
+
+.blog-wrapper{
+	padding: 50px 0px;
+}
+
+.blog-img img{
+	width: 100%;
+}
+.blog-row{
+	margin-bottom: 50px;
+}
+
+.blog-row .blog-content ul li {
+    display: inline-block;
+    padding: 0 15px 0px 0;
+}
+.blog-content a{
+	transition: all 0.3s;
+    font-weight: 500;
+    text-decoration: none;
+    color: #999; 
+    font-size: 14px;
+}
+.blog-content a:hover{
+	color: #999; 
+	text-decoration: none;
+}
+.blog-content h3 a{
+	font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #121158;
+    font-weight: bold;
+}
+.blog-content h3 a:hover{
+	color: #121158;
+	text-decoration: none;
+}
+.blog-continue a{
+	font-weight: 700;
+    text-decoration: underline;
+    color: #121158;
+    font-size: 20px;
+}
+
+/*fotter-wraper*/
+.fotter-wrapper{
+	padding: 50px 0px;
+	background: #1b2a4e;
+}
+ .bottom-logo p {
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 10%;
+    color: #8686b5;
+}
+.social-share li {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: inline-block;
+    background-color: #293f73;
+    text-align: center;
+    line-height: 40px;
+}
+.ocial-share li a i{
+	color: white;
+}
+.bottom-widget .widget-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.bottom-widget ul li a {
+    color: #8686b5;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+
+/*media-query*/
+
+@media(max-width: 991px){
+.banner-content h1 {
+   font-size: 46px;
+   line-height: 51px;
+   color: #121158;
+   font-weight: bold;
+}
+.brand-part {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: -41px;
+}
+.heading-symtom h2 {
+    color: #293f73;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 40px;
+    color: #121158;
+}
+.card-part h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #121158;
+}
+.app-text h1 {
+    font-size: 47px;
+    font-weight: bold;
+    line-height: 50px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: #121158;
+}
+}
+
