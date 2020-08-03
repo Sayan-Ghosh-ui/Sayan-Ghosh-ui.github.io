@@ -1,0 +1,253 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+body{
+	box-sizing: border-box;
+
+}
+
+/*global-classes*/
+.heading{
+	font-weight: 600;
+    font-family: "Montserrat";
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1;
+  }
+.heading-description{
+	font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 18px;
+}
+
+
+
+/*navbar-area-design*/
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*global-classes*/
+.heading{
+	font-size: 30px;
+	letter-spacing: 2px;
+	font-weight: 700;
+	text-align:center;
+}
+.heading-description{
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 25px;
+	text-align: center;
+}
+
+/*navbar-area-design*/
+
+.navbar-expand-lg .navbar-nav .nav-link{
+	font-size: 18px;
+	font-weight: 700;
+	margin-right: 30px;
+	transition: 0.5s ease;
+	color: black;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+	color: #F6415F;
+}
+.navbar{
+	background: #fff !important;
+	box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+.navbar-toggler{
+	border: 2px solid #F6415F !important;
+}
+
+@media(max-width: 991px){
+	.navbar-expand-lg .navbar-nav .nav-link{
+		line-height: 80px;
+	}
+}
+
+
+/*banner-area design*/
+.banner-area{
+	padding: 100px 0px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	
+}
+
+.hero-banner h1{
+	color: white;
+	z-index: 3;
+	text-align: center;
+	font-weight: 800;
+}
+.hero-banner p{
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+	margin-top: 25px;
+}
+.call-action{
+	text-align: center;
+	margin-top: 40px;
+}
+.call-action a{
+	background:#F6415F;
+	padding: 10px 35px; 
+	color: white;
+	font-weight: 700;
+	letter-spacing: 2px;
+	transition: 0.5s ease;
+	border: 2px solid #F6415F; 
+}
+.call-action a:hover{
+	color: white;
+	text-decoration: none;
+	background: transparent;
+}
+
+
+/*about-design*/
+.about-design{
+	padding: 80px 0px;
+	background: #FAFAFA;
+}
+.about-image img{
+	width: 100%;
+}
+.about-descirption{
+	margin-top: 25px;
+}
+.about-row{
+	margin-top: 80px;
+}
+.about-action{
+	margin-top: 40px;
+}
+.about-action a{
+	background:#F6415F;
+	padding: 10px 35px; 
+	color: white;
+	font-weight: 700;
+	letter-spacing: 2px;
+	transition: 0.5s ease;
+	border: 2px solid #F6415F;
+}
+.about-action a:hover{
+	background: transparent;
+	color: black;
+	text-decoration: none;
+}
+.about-descirption h1{
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+.about-descirption p{
+	margin-top: 25px;
+	font-weight: 600;
+}
+
+
+/*services-area*/
+.service{
+	padding: 80px 0px;
+}
+.card-services{
+	background: #fff;
+    box-shadow: 0px 30px 60px rgba(160, 159, 202, 0.45);
+    padding: 20px 30px 20px;
+    border-radius: 5px;
+}
+.card-services h1{
+	font-size: 20px;
+	font-weight: 800;
+}
+.card-services h1 span{
+	color: #F6415F;
+}
+.card-services p{
+	margin-top: 10px;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 25px;
+}
+.card-services img{
+	width: 100%;
+}
+.service-row{
+	margin-top: 80px;
+}
+
+/*testimonail-area*/
+.testimonial-area{
+	padding: 80px 0px;
+	background: #f5f5f5;
+}
+.card-testimonial{
+	text-align: center;
+}
+.image-testimonial img{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	
+}
+.card-testimonial p{
+	color: #6f6f6f;
+	margin-top: 25px;
+}
+.card-testimonial h1{
+	font-size: 25px;
+	font-weight: 700;
+}
+.slick-slide img{
+	display: inline-block !important;
+}
+.parent-testimonial{
+	margin-top: 80px;
+}
+.button_testimonial{
+	margin-top: 80px;
+	text-align: center;
+}
+.button_testimonial h1{
+	font-size: 30px;
+	font-weight: 700;
+}
+.button_testimonial h1 span{
+	font-size: 30px;
+	color: #FF506D;
+	font-weight: 800;
+}
+.button_testimonial a{
+		color: #fff;
+    text-decoration: none;
+    background-color: #FF506D;
+    padding: 8px 35px;
+    display: inline-block;
+    font-family: "Montserrat";
+    font-weight: 600;
+    border-radius: 3px;
+    transition: 1s ease;
+    border: 2px solid #FF506D;
+    margin-top: 25px;
+}
+.button_testimonial a:hover{
+	color: #6f6f6f;
+	background: transparent;
+	border: 2px solid #FF506D;
+	text-decoration: none;
+}
