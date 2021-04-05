@@ -411,3 +411,13 @@ body{
 .why_choose_row{
   margin-top: 50px;
 }
+
+
+
+.services{
+  background: #f8f8f8;
+  padding: 80px 0px;
+}
+.services_card{
+  background: #aef4ff;
+}

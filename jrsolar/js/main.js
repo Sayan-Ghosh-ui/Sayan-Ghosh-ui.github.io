@@ -11,3 +11,4 @@
     $(this).find('h2').addClass('animate__animated animate__fadeInDown');
     $(this).find('p, .btn-get-started').addClass('animate__animated animate__fadeInUp');
   });
+
