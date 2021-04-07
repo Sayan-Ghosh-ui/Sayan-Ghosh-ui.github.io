@@ -14,12 +14,12 @@ body{
 
 
 .navbar{
-  background: #d6d6d6;
+  background: black;
   padding: 16px 1rem !important;
 }
 
 .nav-link {
-    color: black;
+    color: white;
     font-size: 18px;
     font-weight: 600;
 }
@@ -217,6 +217,7 @@ body{
 --------------------------------------------------------------*/
 .about {
   padding: 80px 0px;
+
 }
 
 .about .content {
@@ -395,6 +396,7 @@ body{
 /*why*/ 
 .why{
   padding: 50px 0px;
+
 }
 .card_why{
   padding: 50px 30px;
@@ -428,11 +430,12 @@ body{
 
 
 .services{
-  background: #f8f8f8;
+   background: black;
   padding: 80px 0px;
 }
 .services_card{
-  background: #ebebeb2e;
+  background:white;
+  background-attachment: fixed;
 }
 
 
@@ -521,6 +524,7 @@ body{
 /*gallery*/
 .gallery{
   padding: 80px 0px;
+  background: black;
 }
 .gallery_iamge img{
   width: 100%;
@@ -528,4 +532,8 @@ body{
 }
 .footer_text{
   font-size: 20px!important;
+}
+.gallery_why{
+  background: white;
+  padding: 35px;
 }
