@@ -14,12 +14,12 @@ body{
 
 
 .navbar{
-  background: black;
+  background: white;
   padding: 16px 1rem !important;
 }
 
 .nav-link {
-    color: white;
+    color: black;
     font-size: 18px;
     font-weight: 600;
 }
@@ -430,7 +430,7 @@ body{
 
 
 .services{
-   background: black;
+   background: #1e1e1eeb;
   padding: 80px 0px;
 }
 .services_card{
@@ -524,7 +524,7 @@ body{
 /*gallery*/
 .gallery{
   padding: 80px 0px;
-  background: black;
+  background: #1e1e1eeb;
 }
 .gallery_iamge img{
   width: 100%;
